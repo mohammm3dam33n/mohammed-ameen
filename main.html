@@ -1,0 +1,289 @@
+<link rel="stylesheet" href="css/style.css">
+<!-- Main Template Css File -->
+<link rel="stylesheet" href="css/style.css">
+<!-- Render All Elements Normally -->
+<link rel="stylesheet" href="css/normalize.css">
+<!-- Font Awesome Library -->
+<link rel="stylesheet" href="css/all.css">
+
+
+
+<body>
+
+
+
+    <div class="leftrow">
+
+        <!-- Top menu on small screens -->
+        <header class="w3-hide-large ">
+            <a href="javascript:void(0)" onclick="w3_open()">&#9776;</a>
+            <span>Company Name</span>
+        </header>
+        <!-- Sidebar/menu -->
+        <!--Start Section Sidebar  -->
+        <nav class="sidebar" id="mySidebar"><br>
+            <a href="javascript:void(0)" onclick="w3_close()" class="hide-button">Close Menu<span><i class="fas fa-times"></i></i> 
+            </span>
+            </a>
+            <div class="header-text">
+                <h3 class="w3-padding-64"><b>Company<br>Name</b></h3>
+            </div>
+
+            <!--Start Section Menu  -->
+            <div class="menu">
+                <a href="#" onclick="w3_close()">Home</a>
+                <a href="#showcase" onclick="w3_close()">Showcase</a>
+                <a href="#services" onclick="w3_close()">Services</a>
+                <a href="#designers" onclick="w3_close()">Designers</a>
+                <a href="#packages" onclick="w3_close()">Packages</a>
+                <a href="#contact" onclick="w3_close()">Contact</a>
+            </div>
+            <!--End Section Menu  -->
+        </nav>
+        <!--End Section Sidebar  -->
+    </div>
+
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="rightrow">
+
+
+        <!--  Start header Section   -->
+        <div id="showcase" class="intro-text">
+            <h1>Interior Design</h1>
+            <h2>Showcase.</h2>
+            <hr>
+        </div>
+        <!-- End header Section  -->
+
+
+        <!-- Start Card Gallery Section -->
+        <div id="Gallery" class="features Gallery">
+            <div class="container">
+                <!-- like =>   <img src="images/w3images-atrium.jpg" onclick="onClick(this)" alt="Windows for the atrium"> -->
+
+                <div class="feat">
+                    <img src="./images/atrium.jpg" onclick="onClick(this)" alt="Windows for the atrium">
+                    <img src="./images/bedroom.jpg" onclick="onClick(this)" alt="Windows for the bedroom">
+                    <img src="./images/diningroom.jpg" onclick="onClick(this)" alt="Windows for the diningroom">
+                </div>
+
+                <div class="feat">
+                    <img src="./images/kitchenconcrete.jpg" onclick="onClick(this)" alt="Windows for the kitchenconcrete">
+                    <img src="./images/livingroom.jpg" onclick="onClick(this)" alt="Windows for the livingroom">
+                    <img src="./images/livingroom2.jpg" onclick="onClick(this)" alt="Windows for the livingroom2">
+                </div>
+            </div>
+        </div>
+        <!-- End Card Gallery Section -->
+
+
+        <!-- Photo grid (modal) -->
+
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="containr" style="padding-top:0" onclick="this.style.display='none'">
+            <span class="icon ">&times;</span>
+            <div class="jallery">
+                <img id="img01" src="">
+                <p id="caption"></p>
+            </div>
+        </div>
+
+        <script>
+            // Modal Image Gallery
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+        </script>
+
+
+        <!--  Start Services Section   -->
+        <div id="services" class="intro-text">
+            <h2>Services.</h2>
+            <hr>
+            <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+            <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+        <!-- End Services Section  -->
+
+
+
+        <!--  Start Designers Section   -->
+        <div id="designers" class="intro-text">
+            <h2>Designers.</h2>
+            <hr>
+            <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+            <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p><span>Our designers are thoughtfully chosen:</span></p>
+        </div>
+        <!-- End Designers Section  -->
+
+        <!-- Start Designers section -->
+        <div id="designers" class="features designers ">
+            <div class="container">
+                <div class="feat">
+                    <img class="imag" src="./images/team1.jpg" alt="">
+                    <h2>John Doe</h2>
+                    <p><span>CEO & Founder</span></p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                </div>
+
+                <div class="feat">
+                    <img class="imag" src="./images/team2.jpg" alt="">
+                    <h2>Jane Doe</h2>
+                    <p><span>Designer</span></p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                </div>
+
+                <div class="feat">
+                    <img class="imag" src="./images/team3.jpg" alt="">
+                    <h2>Mike Ross</h2>
+                    <p><span>Architect</span></p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                </div>
+            </div>
+        </div>
+        <!-- End about section -->
+
+
+        <!-- Start Card Designers Section -->
+
+        <!-- End Card Designers Section -->
+
+
+
+        <!-- End Card Designers Section -->
+
+
+
+        <!--  Start Packages Section   -->
+        <div id="packages" class="intro-text">
+            <h2>Packages.</h2>
+            <hr>
+            <p>The best team in the world.</p>
+            <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+        <!-- End Packages Section  -->
+
+        <!-- End Packages Section -->
+        <div id="about" class="features Packages ">
+            <div class="container">
+                <div class="feat">
+                    <ul>
+                        <li class="boxone">Pro</li>
+                        <li>Floorplanning</li>
+                        <li>50 hours support</li>
+                        <li>Photography</li>
+                        <li>50% furniture discount</li>
+                        <li>GREAT deals</li>
+                        <li>
+                            <h2>$ 249</h2>
+                            <span>per room</span>
+                        </li>
+                        <li>
+                            <button class="btnone">Sign Up</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="feat">
+                    <ul>
+                        <li class="boxtwo">Basic</li>
+                        <li>Floorplanning</li>
+                        <li>10 hours support</li>
+                        <li>Photography</li>
+                        <li>20% furniture discount</li>
+                        <li>Good deals</li>
+                        <li>
+                            <h2>$ 199</h2>
+                            <span>per room</span>
+                        </li>
+                        <li>
+                            <button class="btntwo">Sign Up</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Packages Section -->
+
+
+
+
+
+        <!--  Start Contact Section   -->
+        <div id="contact" class="intro-text">
+            <h2>Contact.</h2>
+            <hr>
+            <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+        </div>
+        <!-- End Contact Section  -->
+
+
+
+        <!-- Start Form Contact Section -->
+        <div class="SectionForm">
+            <form action="/action_page.php">
+                <label for="nam"> Name</label>
+                <input id="nam" type="text" placeholder="Your Name">
+                <label for="em"> Email</label>
+                <input id="em" type="text" placeholder="Your Email">
+                <label for="sub">Message</label>
+                <input id="sub" type="text" placeholder="Subject">
+                <button>Send Message</button>
+            </form>
+        </div>
+        <!-- End Form Contact Section -->
+
+
+
+
+    </div>
+
+
+    <!--  Start footer Section   -->
+    <footer>
+        <p>Powered by <a href="">w3.css</a></p>
+    </footer>
+    <!-- End footer Section  -->
+
+
+</body>
