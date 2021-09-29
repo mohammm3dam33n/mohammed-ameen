@@ -34,17 +34,13 @@
                     }
                     /*Start section Sidebar/menu  */
                     
-                    nav {
-                        /* margin-top: 50px; */
-                    }
-                    
                     header {
                         background-color: #f44336;
-                        padding: 30px;
-                        width: 100%;
-                        position: fixed;
-                        z-index: 100;
+                        padding: 25px;
                         font-size: 25px;
+                        position: fixed;
+                        z-index: 10;
+                        width: 100%;
                         color: white;
                         font-weight: bold;
                         border-radius: 5px;
@@ -54,44 +50,15 @@
                         -o-border-radius: 5px;
                     }
                     
-                    header a {
-                        text-decoration: none;
-                        color: black;
-                        font-size: 40px;
-                        font-weight: bold
-                        /* list-style-type: none; */
-                    }
-                    
                     .sidebar {
                         height: 100%;
                         width: 300px;
                         background-color: #fff;
                         position: fixed;
-                        z-index: 5;
-                        /* z-index: 1; */
-                        padding-top: 100px;
+                        z-index: 50;
                         background-color: #f44336;
                         color: white;
                         font-weight: bold;
-                    }
-                    
-                    .hide-button {
-                        padding-bottom: 50px;
-                    }
-                    
-                    .sidebar a {
-                        text-decoration: none;
-                        /* color: white; */
-                        color: white;
-                        margin-left: 15px;
-                    }
-                    
-                    .sidebar a span {
-                        color: #fff;
-                        margin-left: 5px;
-                        font-size: 20px;
-                        /* margin-top: 10px; */
-                        /* font-size: 15px; */
                     }
                     
                     .menu {
@@ -104,6 +71,7 @@
                         color: white;
                         margin-top: 15px;
                         margin-left: 15px;
+                        /* font-size: 15px; */
                     }
                     
                     .menu a:hover {
@@ -117,19 +85,32 @@
                         font-size: 25px;
                     }
                     
-                    @media (max-width:1135px) {
+                    @media (max-width:992px) {
                         .sidebar {
                             display: none
                         }
                     }
                     
-                    @media (min-width:1135px) {
+                    @media (min-width:993px) {
                         .w3-hide-large {
-                            display: none;
+                            display: none!important
                         }
                         .sidebar {
-                            display: block;
+                            display: block!important
                         }
+                    }
+                    
+                    nav a {
+                        color: white;
+                        text-decoration: none;
+                        font-size: 20px;
+                        margin-left: 20px;
+                    }
+                    
+                    header a {
+                        color: white;
+                        text-decoration: none;
+                        font-size: 35px;
                     }
                     /*End section Sidebar/menu  */
                     /* End Screen settings section */
